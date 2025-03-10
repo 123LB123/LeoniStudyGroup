@@ -1,5 +1,6 @@
-﻿@* Interface Enumarable = Enumarate or list (to ascertain the number of : count) *@
-
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";  // Reference to your shared layout
+}
 @model IEnumerable<u23594561Prac1_test_.Models.PersonModel>
 
 @{
@@ -8,9 +9,6 @@
 
 <h2>List of People</h2>
 
-@*<p>
-        @Html.ActionLink("Create New", "Create") >> In this overload it is the name and the action >> Link going nowhere.
-    </p>*@
 <table class="table">
     <tr>
         <th>
@@ -25,10 +23,12 @@
         <th>
             @Html.DisplayNameFor(model => model.EmailAddress)
         </th>
-        <th></th>
+        <th>
+            Profile Link
+        </th> <!-- New column for the button -->
     </tr>
 
-    @foreach (var item in Model) //For each person
+    @foreach (var item in Model) // For each person
     {
         <tr>
             <td>
@@ -43,12 +43,10 @@
             <td>
                 @Html.DisplayFor(modelItem => item.EmailAddress)
             </td>
-            @*<td>
-                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-                </td>*@
-        </tr>
+            <td>
+                <a href="@Url.Content(item.MyLink)" class="btn btn-primary">LINK</a>
+            </td>
+            </tr>
     }
 
 </table>

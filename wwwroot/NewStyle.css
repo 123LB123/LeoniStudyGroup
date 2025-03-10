@@ -1,0 +1,26 @@
+﻿nav a {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-right: 2px solid white;
+}
+
+    nav a:hover {
+        background-color: grey;
+    }
+
+    nav a.active {
+        background-color: red;
+    }
+
+img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+    img:hover {
+        transform: scaleX(-1);
+    }

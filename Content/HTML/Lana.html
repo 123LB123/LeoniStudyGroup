@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Lana Del Rey</title>
+    <link href="/css/StyleSheet.css" rel="stylesheet" />
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <div>
+        <h1>Lana's Page</h1>
+    </div>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav nav-justified w-100">
+                        <li class="nav-item"><a class="nav-link" href="/">MAIN</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/People/ListPeople">LIST</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Dakota.html">Dakota</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Scarlett.html">Scarlett</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Gwyneth.html">Gwyneth</a></li>
+                        <li class="nav-item"><a class="nav-link" href="John.html">John</a></li>
+                        <li class="nav-item active"><a class="nav-link active-link" href="/HTML/Lana.html">Lana</a></li>
+                        <li class="nav-item"><a class="nav-link" href="javascript:void(0);" onclick="history.back(); return false;">BACK</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <style>
+        /* Ensure navbar is horizontal */
+        .navbar-nav {
+            display: flex !important;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: black;
+            padding: 0;
+        }
+
+        /* Style each nav-link */
+        .nav-link {
+            padding: 10px 15px;
+            color: white !important;
+            border-right: 1px solid white;
+            text-align: center;
+        }
+
+        /* Remove border from last item */
+        .nav-item:last-child .nav-link {
+            border-right: none;
+        }
+
+        /* Active link (Person 02) */
+        .active-link {
+            background-color: green !important;
+            font-weight: bold;
+        }
+
+        /* Hover effect */
+        .nav-link:hover {
+            background-color: grey !important;
+        }
+
+        /* Fix text alignment */
+        h2 {
+            text-align: center;
+        }
+
+        /* Responsive: Make items wrap when screen is smaller */
+        @media (max-width: 768px) {
+            .navbar-nav {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .nav-item {
+                flex: 1 1 30%;
+                text-align: center;
+            }
+        }
+    </style>
+
+
+
+
+    <div class="container">
+        <div class="section">
+            <h2>Background and Biography</h2>
+            <img src="/wwwroot/Images/black-widow-1.webp" alt="Black Widow" class="left-image" style="width: 150px; height: 150px; object-fit: cover;" />
+            <p>
+                Lana was born in the USA, and went to school in Los Angeles.
+                She decided to study BCom Informatics because she enjoys designing systems and believes that it will improve her critical thinking and problem solving skills.
+                It will also give her a variety of career opportunities.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Hobbies</h2>
+            <img src="/wwwroot/Images/hawkeye.webp" alt="hawkeye" class="left-image" style="width: 150px; height: 150px; object-fit: cover;" />
+            <p>
+                Superhero-Themed Workouts – Follow fitness routines inspired by superhero training, such as strength training to be like Captain America or agility drills like Spider-Man.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Modules</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Modules Semester 1</th>
+                            <th>Modules Semester 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>STC 212</td>
+                            <td>STK 120</td>
+                        </tr>
+                        <tr>
+                            <td>FBS 200</td>
+                            <td>BEL 200</td>
+                        </tr>
+                        <tr>
+                            <td>INF 214</td>
+                            <td>INF 264 220</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>BER 220</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

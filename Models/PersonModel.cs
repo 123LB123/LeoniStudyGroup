@@ -23,5 +23,8 @@ namespace u23594561Prac1_test_.Models
         [Display(Name = "EMAIL ADDRESS")] //Add as decorator
         // [Required(ErrorMessage = "Name is mandatory")]=> Example of manditory decorator
         public string EmailAddress { get; set; }
+
+        [Display(Name = "LINK")]
+        public string MyLink { get; set; }
     }
 }
